@@ -21,7 +21,7 @@ module Poke
       end
 
       def all
-        base_url = "#{API_URL}/#{resource_path}"
+        base_url = "#{API_URL}/#{resource_path}/"
         limit = BATCH_SIZE
         offset = 0
         objects = []
