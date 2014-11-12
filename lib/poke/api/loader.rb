@@ -17,7 +17,7 @@ module Poke
       end
 
       def find(id)
-        request "#{API_URL}/#{resource_path}/#{id}"
+        request "#{API_URL}/#{resource_path}/#{id}/"
       end
 
       def all
