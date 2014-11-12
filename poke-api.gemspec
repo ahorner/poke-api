@@ -5,7 +5,7 @@ require 'poke/api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "poke-api"
-  spec.version       = Poke::Api::VERSION
+  spec.version       = Poke::API::VERSION
   spec.authors       = ["Andrew Horner"]
   spec.email         = ["andrew@tablexi.com"]
   spec.summary       = %q{A wrapper for the PokéAPI}

@@ -1,7 +1,7 @@
 require "poke/api/version"
 
 module Poke
-  module Api
+  module API
     # Your code goes here...
   end
 end
