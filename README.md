@@ -1,13 +1,13 @@
-# Poke::Api
+# Poke::API
 
-TODO: Write a gem description
+A Ruby wrapper for the PokéAPI (http://pokeapi.co/).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'poke-api'
+gem "poke-api"
 ```
 
 And then execute:
@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Loading Resources
+
+You can access specific resources in the API directly through the `Poke::API::Loader` class:
+
+```ruby
+loader = Poke::API::Loader.new("pokemon")
+
+loader.all
+# => [{ "name" => "Bulbasaur", "national_id" => 1, ... }, ...]
+
+loader.find(169)
+# => { "name" => "Crobat", "national_id" => 169, ... }
+```
 
 ## Contributing
 
