@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://pokeapi.co/api/v1/game?limit=50&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Wed, 12 Nov 2014 06:54:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - s-maxage=360, max-age=360
+    body:
+      encoding: UTF-8
+      string: '{"meta": {"limit": 50, "next": null, "offset": 0, "previous": null,
+        "total_count": 25}, "objects": [{"created": "2013-11-03T19:31:10.975452",
+        "generation": 1, "id": 1, "modified": "2013-11-03T19:31:10.975393", "name":
+        "Red(jpn)", "release_year": 1996, "resource_uri": "/api/v1/game/1/"}, {"created":
+        "2013-11-03T19:31:20.720917", "generation": 1, "id": 2, "modified": "2013-11-03T19:31:20.720871",
+        "name": "Green(jpn)", "release_year": 1996, "resource_uri": "/api/v1/game/2/"},
+        {"created": "2013-11-03T19:31:43.658706", "generation": 1, "id": 3, "modified":
+        "2013-11-03T19:31:43.658656", "name": "Blue(jpn)", "release_year": 1996, "resource_uri":
+        "/api/v1/game/3/"}, {"created": "2013-11-03T19:31:51.827401", "generation":
+        1, "id": 4, "modified": "2013-11-03T19:31:51.827366", "name": "Red", "release_year":
+        1998, "resource_uri": "/api/v1/game/4/"}, {"created": "2013-11-03T19:32:02.106699",
+        "generation": 1, "id": 5, "modified": "2013-11-03T19:32:02.106662", "name":
+        "Blue", "release_year": 1998, "resource_uri": "/api/v1/game/5/"}, {"created":
+        "2013-11-03T19:32:17.359313", "generation": 1, "id": 6, "modified": "2013-11-03T19:32:17.359274",
+        "name": "Yellow", "release_year": 1998, "resource_uri": "/api/v1/game/6/"},
+        {"created": "2013-11-03T19:32:28.615313", "generation": 2, "id": 7, "modified":
+        "2013-11-03T19:32:28.615276", "name": "Gold", "release_year": 1999, "resource_uri":
+        "/api/v1/game/7/"}, {"created": "2013-11-03T19:32:35.025188", "generation":
+        2, "id": 8, "modified": "2013-11-03T19:32:35.025149", "name": "Silver", "release_year":
+        1999, "resource_uri": "/api/v1/game/8/"}, {"created": "2013-11-03T19:32:44.914605",
+        "generation": 2, "id": 9, "modified": "2013-11-03T19:32:44.914559", "name":
+        "Crystal", "release_year": 2000, "resource_uri": "/api/v1/game/9/"}, {"created":
+        "2013-11-03T19:32:57.624694", "generation": 3, "id": 10, "modified": "2013-11-03T19:32:57.624638",
+        "name": "Ruby", "release_year": 2002, "resource_uri": "/api/v1/game/10/"},
+        {"created": "2013-11-03T19:33:06.000698", "generation": 3, "id": 11, "modified":
+        "2013-11-03T19:33:06.000648", "name": "Sapphire", "release_year": 2002, "resource_uri":
+        "/api/v1/game/11/"}, {"created": "2013-11-03T19:33:24.869225", "generation":
+        3, "id": 12, "modified": "2013-11-03T19:33:24.869185", "name": "Fire-red",
+        "release_year": 2004, "resource_uri": "/api/v1/game/12/"}, {"created": "2013-11-03T19:33:37.722984",
+        "generation": 3, "id": 13, "modified": "2013-11-03T19:33:37.722946", "name":
+        "Leaf-green", "release_year": 2004, "resource_uri": "/api/v1/game/13/"}, {"created":
+        "2013-11-03T19:33:49.009470", "generation": 3, "id": 14, "modified": "2013-11-03T19:33:49.009435",
+        "name": "Emerald", "release_year": 2004, "resource_uri": "/api/v1/game/14/"},
+        {"created": "2013-11-03T19:34:05.818825", "generation": 4, "id": 16, "modified":
+        "2013-11-03T19:34:05.818784", "name": "Pearl", "release_year": 2006, "resource_uri":
+        "/api/v1/game/16/"}, {"created": "2013-11-03T19:34:18.445876", "generation":
+        4, "id": 17, "modified": "2013-11-03T19:34:18.445833", "name": "Platinum",
+        "release_year": 2008, "resource_uri": "/api/v1/game/17/"}, {"created": "2013-11-03T19:34:31.094515",
+        "generation": 4, "id": 18, "modified": "2013-11-03T19:34:31.094477", "name":
+        "Heart-gold", "release_year": 2009, "resource_uri": "/api/v1/game/18/"}, {"created":
+        "2013-11-03T19:34:47.698602", "generation": 4, "id": 19, "modified": "2013-11-03T19:34:47.698559",
+        "name": "Soul-silver", "release_year": 2009, "resource_uri": "/api/v1/game/19/"},
+        {"created": "2013-11-03T19:34:57.364384", "generation": 5, "id": 20, "modified":
+        "2013-11-03T19:34:57.364332", "name": "Black", "release_year": 2010, "resource_uri":
+        "/api/v1/game/20/"}, {"created": "2013-11-03T19:35:04.334612", "generation":
+        5, "id": 21, "modified": "2013-11-03T19:35:04.334573", "name": "White", "release_year":
+        2010, "resource_uri": "/api/v1/game/21/"}, {"created": "2013-11-03T19:35:22.838175",
+        "generation": 5, "id": 22, "modified": "2013-11-03T19:35:22.838130", "name":
+        "Black-2", "release_year": 2012, "resource_uri": "/api/v1/game/22/"}, {"created":
+        "2013-11-03T19:35:29.587492", "generation": 5, "id": 23, "modified": "2013-11-03T19:35:29.587451",
+        "name": "White-2", "release_year": 2012, "resource_uri": "/api/v1/game/23/"},
+        {"created": "2013-11-03T19:35:38.738448", "generation": 6, "id": 24, "modified":
+        "2013-11-03T19:35:38.738402", "name": "X", "release_year": 2013, "resource_uri":
+        "/api/v1/game/24/"}, {"created": "2013-11-03T19:35:53.595732", "generation":
+        6, "id": 25, "modified": "2013-11-03T19:35:53.595678", "name": "Y", "release_year":
+        2013, "resource_uri": "/api/v1/game/25/"}, {"created": "2013-11-03T19:33:58.434614",
+        "generation": 4, "id": 15, "modified": "2013-11-03T19:36:04.984382", "name":
+        "Diamond", "release_year": 2006, "resource_uri": "/api/v1/game/15/"}]}'
+    http_version: 
+  recorded_at: Wed, 12 Nov 2014 06:54:36 GMT
+recorded_with: VCR 2.9.3
